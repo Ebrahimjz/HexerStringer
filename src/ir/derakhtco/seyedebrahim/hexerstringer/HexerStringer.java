@@ -6,7 +6,7 @@ public class HexerStringer {
     private HexerStringer() {
     }
 
-    public static HexerStringer getHexStringConverterInstance() {
+    public static HexerStringer createInstance() {
         if (hexStringConverter == null) hexStringConverter = new HexerStringer();
         return hexStringConverter;
     }
